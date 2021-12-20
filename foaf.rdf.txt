@@ -1,0 +1,31 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/">
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+<foaf:name>Jane Stojilkov</foaf:name>
+<foaf:givenname>Jane</foaf:givenname>
+<foaf:family_name>Stojilkov</foaf:family_name>
+<foaf:nick>Jane</foaf:nick>
+<foaf:mbox_sha1sum>8d05fc19b970753158dac7d33266c7483d8a12d8</foaf:mbox_sha1sum>
+<foaf:homepage rdf:resource="homepage.com.mk"/>
+<foaf:phone rdf:resource="tel:321312342"/>
+<foaf:workplaceHomepage rdf:resource="workpage.com.mk"/>
+<foaf:workInfoHomepage rdf:resource="working page"/>
+<foaf:schoolHomepage rdf:resource="finki.ukim.mk"/>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Marko</foaf:name>
+<foaf:mbox_sha1sum>929d6fb295b4a9ee35aae5f8fa9c3458012f4c0b</foaf:mbox_sha1sum></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Dimce</foaf:name>
+<foaf:mbox_sha1sum>b20d4856419b6785a7dc8cde5f4de9c6c034f442</foaf:mbox_sha1sum></foaf:Person></foaf:knows></foaf:Person>
+</rdf:RDF>
