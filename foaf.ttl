@@ -7,6 +7,11 @@
         a                      foaf:Person ;
         foaf:family_name       "Stojilkov" ;
         foaf:givenname         "Jane" ;
+        foaf:knows             [ a                  foaf:Person ;
+                                 rdfs:seeAlso       <https://raw.githubusercontent.com/Tashkovv/WBS-Dom5/master/foaf.ttl> ;
+                                 foaf:mbox_sha1sum  "e164cbe18c07ea485190a14d88d6d0c6c82c949b" ;
+                                 foaf:name          "Jovan"
+                               ] ;
         foaf:mbox_sha1sum      "fc86aa56c93baa6cbffbfedee5cdce9bcfa48dea" ;
         foaf:name              "Jane Stojilkov" ;
         foaf:nick              "Jane" ;
