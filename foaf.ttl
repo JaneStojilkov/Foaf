@@ -1,21 +1,21 @@
-<rdf:RDF
-      xml:base="http://jstojilkov.com/foaf.ttl#"
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-      xmlns:admin="http://webns.net/mvcb/">
-<foaf:PersonalProfileDocument rdf:about="">
-  <foaf:maker rdf:resource="#me"/>
-  <foaf:primaryTopic rdf:resource="#me"/>
-  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
-  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
-</foaf:PersonalProfileDocument>
-<foaf:Person rdf:ID="me">
-<foaf:name>Jane Stojilkov</foaf:name>
-<foaf:givenname>Jane</foaf:givenname>
-<foaf:family_name>Stojilkov</foaf:family_name>
-<foaf:nick>Jane</foaf:nick>
-<foaf:mbox_sha1sum>fc86aa56c93baa6cbffbfedee5cdce9bcfa48dea</foaf:mbox_sha1sum>
-<foaf:workInfoHomepage rdf:resource="Developer"/>
-<foaf:schoolHomepage rdf:resource="finki.ukim.mk"/></foaf:Person>
-</rdf:RDF>
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://jstojilkov.com/foaf.ttl#me>
+        a                      foaf:Person ;
+        foaf:family_name       "Stojilkov" ;
+        foaf:givenname         "Jane" ;
+        foaf:mbox_sha1sum      "fc86aa56c93baa6cbffbfedee5cdce9bcfa48dea" ;
+        foaf:name              "Jane Stojilkov" ;
+        foaf:nick              "Jane" ;
+        foaf:schoolHomepage    <http://jstojilkov.com/finki.ukim.mk> ;
+        foaf:workInfoHomepage  <http://jstojilkov.com/Developer> .
+
+<http://jstojilkov.com/foaf.ttl>
+        a                     foaf:PersonalProfileDocument ;
+        admin:errorReportsTo  <mailto:leigh@ldodds.com> ;
+        admin:generatorAgent  <http://www.ldodds.com/foaf/foaf-a-matic> ;
+        foaf:maker            <http://jstojilkov.com/foaf.ttl#me> ;
+        foaf:primaryTopic     <http://jstojilkov.com/foaf.ttl#me> .
